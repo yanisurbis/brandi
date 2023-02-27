@@ -12,6 +12,8 @@ import { tagsRegistry } from '../registries';
  *
  * @link https://brandi.js.org/reference/conditional-bindings
  */
+
+// do the same things as injected, but with tags
 export const tagged = <T extends UnknownCreator>(
   target: T,
   ...tags: Tag[]
