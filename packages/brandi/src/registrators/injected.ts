@@ -16,6 +16,7 @@ type ToTokens<T extends unknown[]> = {
  *
  * @link https://brandi.js.org/reference/pointers-and-registrators#injectedtarget-tokens
  */
+// modifying some global state, feels like a bad idea
 export const injected = <T extends UnknownCreator>(
   target: T,
   ...tokens: ToTokens<UnknownCreatorParameters<T>> extends TokenValue[]
